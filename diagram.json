@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "author": "Stamate Constantin",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 211.8, "left": 44.4, "attrs": {} },
+    { "type": "resistor", "id": "r1", "top": 50, "left": 70, "attrs": { "value": "220" } },
+    { "type": "wokwi-led", "id": "led2", "top": 147.6, "left": 51.8, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led3", "top": 90, "left": 157.4, "attrs": { "color": "green" } },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -294.17, "left": 332.8, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -251.6, "left": -224.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "led3:A", "mega:8", "green", [ "v0" ] ],
+    [ "led3:C", "mega:GND.1", "green", [] ],
+    [ "led2:A", "mega:9", "green", [ "v326.4", "h135.1" ] ],
+    [ "led2:C", "mega:GND.1", "green", [ "v0" ] ],
+    [ "lcd1:RS", "mega:7", "green", [ "v67.6", "h-158.9" ] ],
+    [ "lcd1:E", "mega:6", "green", [ "v76.8", "h-168.4" ] ],
+    [ "lcd1:D4", "mega:5", "green", [ "v86.4", "h-206.9" ] ],
+    [ "lcd1:D5", "mega:4", "green", [ "v96", "h-206.9" ] ],
+    [ "lcd1:D6", "mega:3", "green", [ "v105.6", "h-206.9" ] ],
+    [ "lcd1:D7", "mega:2", "green", [ "v115.2", "h-206.9" ] ],
+    [ "lcd1:VDD", "mega:5V", "green", [ "v38.4", "h-165.4" ] ],
+    [ "lcd1:VSS", "mega:GND.2", "green", [ "v28.8", "h-146.15" ] ],
+    [ "keypad1:R1", "mega:A3", "green", [ "v374.4", "h406.65" ] ],
+    [ "keypad1:R2", "mega:A2", "green", [ "v364.8", "h386.7" ] ],
+    [ "keypad1:R3", "mega:A1", "green", [ "v355.2", "h367.7" ] ],
+    [ "keypad1:R4", "mega:A0", "green", [ "v345.6", "h348.7" ] ],
+    [ "keypad1:C1", "mega:13", "green", [ "v57.6", "h259.7" ] ],
+    [ "keypad1:C2", "mega:12", "green", [ "v38.4", "h259.7" ] ],
+    [ "keypad1:C3", "mega:11", "green", [ "h-0.15", "v19.2", "h259.7" ] ],
+    [ "keypad1:C4", "mega:10", "green", [ "h259.9", "v134.4" ] ]
+  ],
+  "dependencies": {}
+}

@@ -112,4 +112,4 @@ pio run --target upload
 **Security System** was developed as part of the Internet of Things laboratory works.
 
 - GitHub: [Constantin-Stamate](https://github.com/Constantin-Stamate)
-- Email: frimudumitru@example.com
+- Email: constantinstamate.r@gmail.com
